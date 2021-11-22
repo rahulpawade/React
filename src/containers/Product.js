@@ -124,7 +124,7 @@ export default function Product() {
       };
       setToasts(toasts.concat(toast));
       return;
-    } else if (!numeric(price)) {
+    } else if (!numeric(price.toString())) {
       const toast = {
         id: Math.random().toString(),
         title: "Validation Check",
